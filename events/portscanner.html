@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>event</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+</head>
+
+<body>
+
+  <section class="section hero is-black">
+    <div class="container">
+      <h3 class="title is-3 has-text-danger">To participate to the event and submit the project please join our Community Discord by
+        clicking <a class="has-text-warning" href="https://bit.ly/2KeOqlm">here</a></h3>
+    
+      <h1 class="title has-text-info">
+        DIY Port Scanner Event
+      </h1>
+      <a id="rules"></a>
+
+      <div class="title has-text-danger">
+        Rules
+      </div>
+      <p class="subtitle">
+        <nl>
+          <li>Only socket programming, do not use any third party modules to perform the port scan.</li>
+          <li>Do everything yourself.</li>
+          <li>You must join the discord server.</li>
+          <li>You must submit your project to be counted.</li>
+          <li>Your entry can be denied for any reason.</li>
+        </nl>
+      </p>
+      <div class="columns">
+        <div class="column">
+          <p class="title has-text-success">
+            Guide
+          </p>
+
+          <p class="subtitle">
+
+            Join <a href="https://discord.gg/j2XbzgwTT7" class="has-text-warning"><b>Omicron Discord</b></a> to submit your entries by
+            clicking <a class="has-text-warning" href="https://bit.ly/2KeOqlm">here</a>.
+
+            <div id="chapters">
+              <a id="guide"></a>
+
+            </div>
+
+        </div>
+        <div class="column">
+
+          <p class="title has-text-warning">
+            Bonus points
+          </p>
+          <p class="subtitle">
+            - Implement a ton more features like subnet scanning<br>
+            - Cool readme with screenshots and a list of all the features<br>
+            - Make the output of the tool easy to read<br>
+            - Export results <br>
+
+          </p>
+          <p class="title is-4">Want to support us? You can! Send any amount of money to the following BTC address: <span class="has-text-warning">1GPeXrqUbYV7CN9BhLk45XHwjTdQese9hj</span>!</p>
+        </div>
+      </div>
+
+      <small>This page is still under development
+      </small>
+      </p>
+
+    </div>
+  </section>
+</body>
+<script>
+  const chapters = document.getElementById("chapters");
+  const c = [{
+      "title": "1. Make the base project",
+      "info": "This is your folder where all the code is found!\nAt this step you should also make a github repo!"
+    },
+
+    {
+      "title": "2. Ask the user for an IP to scan",
+      "info": ""
+    },
+
+    {
+      "title": "3. Check if the host is alive",
+      "info": "This can be done by pinging it! Saves time to check if the host is alive before port scanning and wondering why there are no ports returned"
+    },
+
+    {
+      "title": "4. Generate a range of ports",
+      "info": ""
+    },
+
+    {
+      "title": "5. Connect to each port and check if the server has answered to it!",
+      "info": ""
+    },
+
+    {
+      "title": "6. Pretty print the results!",
+      "info": ""
+    },
+  ]
+  for (i of c) {
+    chapters.innerHTML += `<b>${i.title}</b><br>- ${i.info.replace("\n", "<br> - ")}<br>`
+  }
+</script>
+
+</html>

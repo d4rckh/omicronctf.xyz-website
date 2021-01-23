@@ -1,75 +1,82 @@
-
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body, html {
-  height: 100%;
-  margin: 0;
-  font: 400 15px/1.8 "Lato", sans-serif;
-  color: #777;
-  cursor: pointer;
-}
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>OmicronCTF</title>
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <style>
+        .bg-cover {
+            background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8) ),
+                        url(img/bg_cover.jpg)
+                        no-repeat center center fixed;
+            background-size: cover;
+        }
 
-.bgimg-1, .bgimg-2, .bgimg-3 {
-  position: relative;
-  opacity: 0.65;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+        .input.is-ghost {
+            background: transparent;
+            border: solid 1px #ffffff;
+            color: #ffffff;
+        }
 
-}
-.bgimg-1 {
-  background-image: url("https://i.gifer.com/19Zo.gif");
-  height: 100%;
-}
+        .input.is-ghost::placeholder {
+            color: #888888;
+        }
 
-.caption {
-  position: absolute;
-  left: 0;
-  top: 25%;
-  width: 100%;
-  text-align: center;
-  color: #000;
-}
+        .button.is-ease {
+            color: #eeeeee;
+            border-color: #eeeeee;
+            transition: color 0.35s ease, border-color 0.35s ease;
+        }
 
-.caption span.border {
-  background-color: #111;
-  color: #fff;
-  padding: 18px;
-  font-size: 25px;
-  letter-spacing: 10px;
-}
+        .button.is-ease:hover {
+            color: #ffffff;
+            border-color: #ffffff;
+        }
 
-h3 {
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  font: 20px "Lato", sans-serif;
-  color: #111;
-}
-</style>
+        .hero .subtitle {
+            padding: 1.5rem;
+        }
+    </style>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-BYQSHQ46CT"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-BYQSHQ46CT');
+        </script>
 </head>
-<body onclick="go()">
+<body>
 
-<div class="bgimg-1">
-  <div class="caption">
-    <span class="border">OmicronCTF</span><br>
-    <span class="border">InfoSec Community</span><br>
-    <span class="border">
-        Events, talks, giveaways
-    </span><br><br><br>
-    <span class="border">
-        <small>Click anywhere to join</small>
-    </span>
-    <br><br>
-    <span class="border">1 EVENT ONGOING CLICK <a href="/event.html" style="color: lightblue">HERE</a> FOR MORE INFO!</span>
-  </div>
-</div>
-<script>
-    function go() {
-        window.location = "https://discord.gg/f35GSkdapp"
-    }
-</script>
+<section class="hero is-info is-fullheight bg-cover">
+    <div class="hero-body">
+        <div class="container has-text-centered">
+            <div class="column is-6 is-offset-3">
+                <h1 class="title is-uppercase">
+                    OmicronCTF
+                </h1>
+                <h2 class="subtitle">
+                    We play CTFs, host conferences, events and much more on twitch and discord!
+                </h2>
+                <div class="">
+
+                    <div class="field is-grouped is-grouped-centered">
+                        <p class="control">
+                            <a class="button is-white is-outlined is-rounded is-grouped-centered is-ease is-uppercase has-text-weight-bold">
+                                Join Discord
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 </body>
 </html>

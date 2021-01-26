@@ -2,10 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+        <!-- Primary Meta Tags -->
+    <title>OmicronCTF - Invite</title>
+    <meta name="title" content="OmicronCTF">
+    <meta name="description" content="">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://omicronctf.xyz/">
+    <meta property="og:title" content="OmicronCTF">
+    <meta property="og:description" content="We play CTFs, host conferences, events and much more on twitch and discord!">
+    <!-- Twitter -->
+    <meta property="twitter:url" content="https://omicronctf.xyz/">
+    <meta property="twitter:title" content="OmicronCTF">
+    <meta property="twitter:description" content="We play CTFs, host conferences, events and much more on twitch and discord!">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>OmicronCTF - Invite</title>
+    <title>OmicronCTF</title>
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
     <style>
@@ -50,35 +64,46 @@
 
         gtag('config', 'G-BYQSHQ46CT');
         </script>
+        <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-TJSF5DT');</script>
+        <!-- End Google Tag Manager -->
+
 </head>
 <body>
-
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TJSF5DT"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 <section class="hero is-info is-fullheight bg-cover">
     <div class="hero-body">
         <div class="container has-text-centered">
             <div class="column is-6 is-offset-3">
                 <h1 class="title is-uppercase">
-                    OmicronCTF
+                    Thanks for joining. Here are some reasons you should stay:
                 </h1>
                 <h2 class="subtitle">
-                    We play CTFs, host conferences, events and much more on twitch and discord!
+                    <ul>
+                        <li>1. We play weekly King Of The Hill, helping you advance your skills to the next level.</li><br>
+                        <li>2. We share what we learn everyday.</li><br>
+                        <li>3. We propose topics everyday, so you always find new topics to study and discover a ton of techniques!</li>
+                    </ul>
+                    <a href="https://discord.gg/68pqHX8UHZ" id="button-no-popup" style="display: none;">button</a>
                 </h2>
-                <div class="">
-
-                    <div class="field is-grouped is-grouped-centered">
-                        <p class="control">
-                            <a class="button is-white is-outlined is-rounded is-grouped-centered is-ease is-uppercase has-text-weight-bold" href="https://discord.gg/68pqHX8UHZ">
-                                Join Discord
-                            </a>
-                        </p>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
 </section>
 <script>
-    window.location = "https://discord.gg/68pqHX8UHZ"
+    var newWin = window.open('https://discord.gg/68pqHX8UHZ','popup','width=600,height=600,scrollbars=no,resizable=no');
+    if(!newWin || newWin.closed || typeof newWin.closed=='undefined') 
+    { 
+        document.getElementById("test-button").click()
+     }
+
 </script>
 </body>
 </html>

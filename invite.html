@@ -98,10 +98,23 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 </section>
 <script>
+
+    var simulateClick = function (elem) {
+        // Create our event (with options)
+        var evt = new MouseEvent('click', {
+            bubbles: true,
+            cancelable: true,
+            view: window
+        });
+        // If cancelled, don't dispatch our event
+        var canceled = !elem.dispatchEvent(evt);
+    };
+
+
     var newWin = window.open('https://discord.gg/68pqHX8UHZ','popup','width=600,height=600,scrollbars=no,resizable=no');
     if(!newWin || newWin.closed || typeof newWin.closed=='undefined') 
     { 
-        document.getElementById("button-no-popup").click()
+        simulateClick(document.getElementById("button-no-popup"))
      }
 
 </script>

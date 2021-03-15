@@ -1,0 +1,86 @@
+/** Crypto code-block**/
+.crypto {
+    font-size: 105%;
+    background-color: rgba(222,222,222,0.3);
+}
+
+.crypto {
+    color: crimson;
+    background-color: #040408;
+    padding-left: 4px;
+    padding-right: 4px;
+    font-size: 110%;
+}
+
+.crypto-code, .crypto-codespan {
+    font-family: Consolas,"courier new";
+    font-size: 16px;
+}
+
+code, kbd, pre, samp {
+    font-family: monospace,monospace;
+    font-size: 1em;
+}
+
+code {
+    font-family: monospace;
+}
+
+/** Rev-Eng code-block**/
+
+.rev {
+    font-size: 105%;
+    background-color: rgba(222,222,222,0.3);
+}
+
+.rev {
+    color: #228B22;
+    background-color: #040408;
+    padding-left: 4px;
+    padding-right: 4px;
+    font-size: 110%;
+}
+
+.rev-code, .rev-codespan {
+    font-family: Consolas,"courier new";
+    font-size: 16px;
+}
+
+code, kbd, pre, samp {
+    font-family: monospace,monospace;
+    font-size: 1em;
+}
+
+code {
+    font-family: monospace;
+}
+
+/** Pwn code-block**/
+
+.pwn {
+    font-size: 105%;
+    background-color: rgba(222,222,222,0.3);
+}
+
+.pwn {
+    color: #1E90FF;
+    background-color: #040408;
+    padding-left: 4px;
+    padding-right: 4px;
+    font-size: 110%;
+}
+
+.pwn-code, .pwn-codespan {
+    font-family: Consolas,"courier new";
+    font-size: 16px;
+}
+
+code, kbd, pre, samp {
+    font-family: monospace,monospace;
+    font-size: 1em;
+}
+
+code {
+    font-family: monospace;
+}
+

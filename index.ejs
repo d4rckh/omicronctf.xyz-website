@@ -4,50 +4,13 @@
 <head>
   <title>Omicron &middot; CTF</title>
 
-  
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <link rel="stylesheet" href="/css/fontawesome.css"
-    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-
-  <link rel="stylesheet" href="css/bootstrap4-neon-glow.min.css">
-
-  <link rel="stylesheet" href="css/main.css">
-
-  <link rel="stylesheet" href="css/footer.css">
-
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-  <link rel='stylesheet' href='https://cdn.jsdelivr.net/font-hack/2.020/css/hack.min.css'>
-
+  <%- include("./partials/head.ejs") %>
 
 </head>
 
 <body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TJSF5DT"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
-  
-  
-  <div class="navbar-dark text-white">
-    <div class="container">
-      <nav class="navbar px-0 navbar-expand-lg navbar-dark">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a href="/" class="p-3 text-decoration-none text-light active">Home</a>
-            <a href="/invite.html?utm_source=omicronctf.xyz&utm_medium=navbar&utm_campaign=omicronctf.xyz" class="p-3 text-decoration-none text-light">Join our Discord
-              Server</a>
-          </div>
-        </div>
-      </nav>
 
-    </div>
-  </div>
+  <%- include("./partials/navbar.ejs") %>
 
 
 
@@ -139,21 +102,6 @@
 
 </body>
 
-<footer class="footer-distributed">
-
-
-    <div class="footer-left">
-  
-      <p class="footer-links">
-        <a class="link-1" href="/">Home</a>
-  
-        <a href="https://omicronctf.xyz/invite.html?utm_source=omicronctf.xyz&utm_medium=footer&utm_campaign=omicronctf.xyz">Join our Discord Server</a>
-  
-      </p>
-  
-      <p>Omicron CTF &copy; 2021</p>
-    </div>
-  
-  </footer>
+<%- include("./partials/footer.ejs") %>
 
 </html>
